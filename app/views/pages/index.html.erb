@@ -1,1 +1,11 @@
 <h1>Hello World</h1>
+
+<ul>
+  <% @jobs.each do |job| %>
+  <li><%= job.title %><br></li>
+  <li><%= job.employer %><br></li>
+  <li><%= job.description %><br></li>
+  <li><%= job.from %><br></li>
+  <li><%= job.to %><br></li>
+  <% end %>
+</ul>
